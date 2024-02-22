@@ -7,7 +7,6 @@
 int main(int argc, char * argv[]) {
     std::filesystem::path projdir = argv[1];
     std::filesystem::path exedir = projdir / "main.exe";
-    std::filesystem::path tmpdir = getenv("TMP");
     //std::cout << tmpdir << '\n' << projdir << '\n' << exedir << '\n';
     if (!std::filesystem::exists(exedir)) {
         std::cout << "EXE file doesnt exist.";
