@@ -1,0 +1,2 @@
+powershell.exe -NoExit -Command "&{Import-Module """C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Microsoft.VisualStudio.DevShell.dll"""; Enter-VsDevShell 3ed31a99 -SkipAutomaticLocation -DevCmdArguments """-arch=x64 -host_arch=x64"""; cl /std:c++17 %1  /Fe%1.exe }"
+exit /b 0
